@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopapp/interface/utils/themes/swatch.dart';
 
 class AppTheme {
   ThemeData apptheme() => ThemeData(
@@ -9,7 +10,8 @@ class AppTheme {
               color: Colors.black,
               size: 30,
             )),
-        primaryColor: Colors.pink.shade300,
+        primaryColor: const Color(0xFF850631),
+        primarySwatch: generateMaterialColor(const Color(0xFF850631)),
         scaffoldBackgroundColor: Colors.white,
       );
 }
